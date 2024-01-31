@@ -1,9 +1,15 @@
 # Shoplive module for react native for easier integration
 
 ## Documentation
-1. download module by running : npm install react-native-applovin-max
+1. download module by running : 
+```bash
+npm install react-native-applovin-max
+```
 
-1-2. run 'pod install --repo-update' in 'ios' folder
+1-2. run pod install in ios folder to install dependencies
+```bash
+pod install --repo-update
+```
 
 2. import modules and create instance
 
