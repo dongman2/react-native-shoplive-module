@@ -1,4 +1,5 @@
 import { NativeModules, Platform } from 'react-native';
+export {default as ShopliveJSModule} from './ShopliveJSModule'
 
 const LINKING_ERROR =
   `The package 'react-native-shoplive-module' doesn't seem to be linked. Make sure: \n\n` +

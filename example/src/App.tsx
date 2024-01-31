@@ -3,7 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import WebView from 'react-native-webview';
 import type {EventData} from '../../src/EventEmitter';
-import ShopliveJSModule from '../../src/ShopliveJSModule';
+import {ShopliveJSModule} from '../../src/index';
 import 'react-native-gesture-handler';
 
 import {
