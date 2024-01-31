@@ -61,9 +61,11 @@ shoplive.onHandleNavigation((payload: EventData) => {
     });
 ```
 
-4. running campaign by
+4. running campaign by setting accessKey and playing with campaignKey
+```javascript
 shoplive.setAccessKey(ACCESSKEY);
 shoplive.play(CAMPAIGNKEY);
+```
 
 ## Demo Apps
 The `/example` directory contains the demo app. Gradle and CocoaPods automatically pulls in the React Native module for easier debugging.

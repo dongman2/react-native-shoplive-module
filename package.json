@@ -1,6 +1,6 @@
 {
   "name": "react-native-shoplive-module",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "personal adapter",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
