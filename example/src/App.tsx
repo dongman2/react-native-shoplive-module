@@ -48,7 +48,7 @@ function HomeScreen({navigation}: HomeProps) {
       <StatusBar />
       <ScrollView contentInsetAdjustmentBehavior="automatic">
         <View style={styles.header}>
-          <Text style={styles.headerText}>SAMPLE HOME</Text>
+          <Text style={styles.headerText}>SHOPLIVE SAMPLE</Text>
         </View>
         <View style={styles.container}>
           <Text style={styles.label}>accessKey:</Text>
