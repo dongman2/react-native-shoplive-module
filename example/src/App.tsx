@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import WebView from 'react-native-webview';
-import type {EventData} from '../../src/EventEmitter';
+import type {EventData} from '../../src/index';
 import {ShopliveJSModule} from '../../src/index';
 import 'react-native-gesture-handler';
 
@@ -48,7 +48,7 @@ function HomeScreen({navigation}: HomeProps) {
       <StatusBar />
       <ScrollView contentInsetAdjustmentBehavior="automatic">
         <View style={styles.header}>
-          <Text style={styles.headerText}>SHOPLIVE SAMPLE</Text>
+          <Text style={styles.headerText}>SHOPLIVE SAMPLE!</Text>
         </View>
         <View style={styles.container}>
           <Text style={styles.label}>accessKey:</Text>

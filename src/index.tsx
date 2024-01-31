@@ -1,5 +1,6 @@
 import { NativeModules, Platform } from 'react-native';
 export {default as ShopliveJSModule} from './ShopliveJSModule'
+export type {EventData} from './EventEmitter'
 
 const LINKING_ERROR =
   `The package 'react-native-shoplive-module' doesn't seem to be linked. Make sure: \n\n` +
