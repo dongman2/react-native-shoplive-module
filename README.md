@@ -11,15 +11,20 @@ npm install react-native-applovin-max
 pod install --repo-update
 ```
 
-2. import modules and create instance
+2. Import modules and create instance
 
 ```javascript
 import {ShopliveJSModule} from "react-native-shoplive-module";
 import type {EventData} from "react-native-shoplive-module";
 const shoplive = new ShopliveJSModule();
 ```
+3. Run campaign by setting accessKey and playing with campaignKey
+```javascript
+shoplive.setAccessKey(ACCESSKEY);
+shoplive.play(CAMPAIGNKEY);
+```
 
-3. Adding handlers
+4. Add handlers to define your custom action upon each event
 
 ```javascript
 shoplive.onHandleNavigation((payload: EventData) => {
@@ -67,12 +72,8 @@ shoplive.onHandleNavigation((payload: EventData) => {
     });
 ```
 
-4. running campaign by setting accessKey and playing with campaignKey
-```javascript
-shoplive.setAccessKey(ACCESSKEY);
-shoplive.play(CAMPAIGNKEY);
-```
+
 
 ## Demo Apps
-The `/example` directory contains the demo app. Gradle and CocoaPods automatically pulls in the React Native module for easier debugging.
+The `/example` directory contains the demo app 
 
