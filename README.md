@@ -77,3 +77,5 @@ shoplive.onHandleNavigation((payload: EventData) => {
 ## Demo Apps
 The `/example` directory contains the demo app 
 
+----
+Made with create-react-native-library
