@@ -3,7 +3,7 @@
 ## Documentation
 1. download module by running : 
 ```bash
-npm install react-native-applovin-max
+npm install react-native-shoplive-module
 ```
 
 1-2. run pod install in ios folder to install dependencies
