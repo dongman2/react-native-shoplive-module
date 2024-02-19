@@ -53,7 +53,9 @@ class ShopliveModule: RCTEventEmitter {
   @objc(setShareUrl:)
   func setShareUrl(_ schemeUrl: String) {
     DispatchQueue.main.async {
-      ShopLive.setShareScheme(schemeUrl, custom: nil)
+      //share api changed since v1.5.5
+      // ShopLive.setShareScheme(schemeUrl, custom: nil)
+      ShopLive.setShareScheme(schemeUrl, shareDelegate: nil)
     }
   }
   
