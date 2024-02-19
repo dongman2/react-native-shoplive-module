@@ -97,9 +97,9 @@ function WebviewScreen({route, navigation}: WebviewProps) {
         cacheEnabled={false}
         ignoreSslError={true}
         style={styles.webview}
-        //Refer to sample html file ""./assets/shoplive_list.html" , Please change to your own url
+        //Refer to sample html file ""./sample.html" , Please change to your own url. DO NOT USE BELOW URL for your service
         source={{
-          uri: `https://dongman2.github.io/shoplive-list/shoplive_list.html?ak=${ak}&test=18111fgarjr5`,
+          uri: `https://dongman2.github.io/shoplive-list/shoplive_list.html?ak=${ak}`,
         }}
         onMessage={({nativeEvent}) => {
           const {type, data} = JSON.parse(nativeEvent.data);

@@ -1,0 +1,36 @@
+
+<html>
+  <head>
+    <title>Shoplive - Simple Shoplive Plugin example</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover, shrink-to-fit=no"
+    />
+    <script type="text/javascript" src="https://static.shoplive.cloud/shoplive.js"></script>    
+    <script>
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const ak= urlParams.get('ak');
+        
+        const postMessage = (type,data) => {
+          window.ReactNativeWebView?.postMessage(JSON.stringify({ type, data }));
+        };
+        
+        let messageCallback = {
+        // ON_CLICK_CAMPAIGN_LIST_ITEM 이벤트콜백을을 통해 방송 리스트의 아이템을 클릭했을 때의 이벤트를 받아서 postMessage를 통해 리액트 네이티브로 전달합니다.
+        // The ON_CLICK_CAMPAIGN_LIST_ITEM event callback receives the event when an item in the broadcast list is clicked and passes it to React Native through postMessage.
+        ON_CLICK_CAMPAIGN_LIST_ITEM: function(payload) {
+          console.log('Campaign info : ', payload.campaign);
+          postMessage('playShoplive',payload)
+        },
+      };
+      cloud.shoplive.init({ accessKey: ak, messageCallback: messageCallback });
+    </script>
+    
+    <body>
+    <div id="shoplive-overall"></div>
+    <script defer>
+      cloud.shoplive.setOverall('shoplive-overall',{ campaignListsOnly: true });
+    </script>
+  </body>
+</html>
