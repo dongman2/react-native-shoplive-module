@@ -12,7 +12,7 @@ RCT_EXTERN_METHOD(multiply:(float)a withB:(float)b
 }
 RCT_EXTERN_METHOD(play:(NSString *)campaign)
 RCT_EXTERN_METHOD(setAccessKey:(NSString *)accessKey)
-RCT_EXTERN_METHOD(setUser:(NSString *)userId (NSString *)userName)
+RCT_EXTERN_METHOD(setUser:(NSString *)userId userName:(NSString *)userName)
 RCT_EXTERN_METHOD(setShareUrl:(NSString *)schemeUrl)
 RCT_EXTERN_METHOD(close)
 RCT_EXTERN_METHOD(supportedEvents)
